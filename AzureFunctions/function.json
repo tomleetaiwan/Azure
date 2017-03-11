@@ -1,0 +1,19 @@
+﻿{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "orderqueue",
+      "connection": "azurefunorder_STORAGE"
+    },
+    {
+      "type": "sendGrid",
+      "name": "message",
+      "apiKey": "SendGridKey",
+      "direction": "out",
+      "from": "admin@contoso.com"
+    }
+  ],
+  "disabled": false
+}
