@@ -30,14 +30,16 @@ public static void Run(string myQueueItem, TraceWriter log,out Mail message)
     string orderItem = null;
     // JSON Object 
     JObject restoredObject = null;
+
+    //Process the new order message code here
+    log.Info($"Start Process");
+
     // SendGird mail object
     message = new Mail ();    
     // Get Azure SQL Database Connection String from App Servive Application Setting
     string dbConnectionString = ConfigurationManager.ConnectionStrings["OrderDBConnectionString"].ConnectionString;
     // Get Slack Webhooks URI 
     string SlackWebhooksURI = ConfigurationManager.AppSettings["SlackWebhook"];
-    //Process the new order message code here
-    log.Info($"Start Process");
 
     try
     {
@@ -63,7 +65,7 @@ public static void Run(string myQueueItem, TraceWriter log,out Mail message)
      {
        log.Info($"Exception message is"+ex.Message);        
        //Invoke Slack Webhooks API to inform internal operator
-       SlackMessage(SlackWebhooksURI, "Receive a new order but something go wrong","E");  
+       SlackMessage(SlackWebhooksURI, "Receive a new order but something goes wrong","E");  
      }      
 
 }
