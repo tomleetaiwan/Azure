@@ -40,6 +40,8 @@ The high-level architecture diagram as below:
 
 -   Creates an Azure Functions and setting the application
 
+![](media/e843831dcc5047632c11db0a17acc904.png)
+
 ![](media/55dde61371ab6711cba92c935c95313c.png)
 
 **azurefunorder\_STORAGE** : Azure Storage Queue access key
