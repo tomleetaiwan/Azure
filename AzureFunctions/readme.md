@@ -24,7 +24,7 @@ The high-level architecture diagram as below:
 
 ![](media/8e1831869ecbf8aaf62840917cba5ab0.png)
 
-The Azure Function can process the Order message JSON format like this:
+The Azure Function can process an Order message JSON format like this:
 ```json
 {
   "Name":"Tom Lee",
