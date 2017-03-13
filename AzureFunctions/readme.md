@@ -24,6 +24,15 @@ The high-level architecture diagram as below:
 
 ![](media/8e1831869ecbf8aaf62840917cba5ab0.png)
 
+The Azure Function can process the Order message JSON format like this:
+```json
+{
+  "Name":"Tom Lee",
+  "Email":"tomlee@contoso.com",
+  "Item":"A1 Business Cloud"
+}
+```
+
 ### Requirements
 
 -   Prepare a SendGrid account and create an API key
