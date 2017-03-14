@@ -13,18 +13,18 @@ meet these technical requirement:
 
 -   Supports trigger for Azure Storage queues.
 
--   Azure Function can insert order data into Azure SQL Database
+-   Azure Functions can insert order data into Azure SQL Database
 
--   Azure Function can be integrated with SendGrid API for sending confirmation
+-   Azure Functions can be integrated with SendGrid API for sending confirmation
     email to customer.
 
--   Azure Function can be integrated with Slack Webhooks API for communication.
+-   Azure Functions can be integrated with Slack Webhooks API for communication.
 
 The high-level architecture diagram as below:
 
 ![](media/8e1831869ecbf8aaf62840917cba5ab0.png)
 
-The Azure Function can process an Order message JSON format like this:
+The Azure Functions can process an Order message JSON format like this:
 ```json
 {
   "Name":"Tom Lee",
