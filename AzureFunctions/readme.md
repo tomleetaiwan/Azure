@@ -32,7 +32,7 @@ The Azure Functions can process an Order message JSON format like this:
   "Item":"A1 Business Cloud"
 }
 ```
-You can download free tool [Microsoft Azure Storage Explorer] (http://storageexplorer.com/) to send out an order message into the Azure Storage Queue.
+You can download free tool [Microsoft Azure Storage Explorer](http://storageexplorer.com/) for sending out an order message into the Azure Storage Queue.
 
 ### Requirements
 
